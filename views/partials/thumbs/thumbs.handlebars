@@ -1,0 +1,17 @@
+<div class="row my-5">
+    <div class="col-sm">
+       <a href="/work/{{id}}"><img class="thumbnailImg" src="/assets/img/{{gif}}" alt="gif of {{title}}"></a>
+    </div>
+<div class="card col-sm">
+  <div class="card-body">
+    <h5 class="card-title">{{title}}</h5>
+    <p class="card-text">{{caption}}</p>
+        <ul class="list-inline">
+            {{#each tech}}
+                <li class="list-inline-item py-1"><span class="btn-light btn-sm">{{this}}</span></li>
+            {{/each}}
+        </ul>
+    <a href="/work/{{id}}" class="card-link projectLink">View Project</a>
+  </div>
+</div>
+</div>

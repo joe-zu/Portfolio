@@ -1,0 +1,71 @@
+
+
+<ul class="nav nav-pills justify-content-center fixed-top">
+  <li class="nav-item">
+    <a class="nav-link" aria-current="page" href="/">index</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="/work">work</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/about">about</a>
+  </li>
+</ul>
+
+<div class="container mt-5 py-4">
+
+    {{#each project}}
+        <div class="row mt-5 text-center">
+            <h2>{{title}}</h2>
+            <h5>{{caption}}</h5>
+        </div>
+        <div class="row my-5">
+            <ul class="list-inline text-center">
+                <li class="list-inline-item"><a target="_blank" href="{{url}}"><button type="button" class="btn btn-outline-dark">Visit Site</button></a></li>
+                <li class="list-inline-item"><a target="_blank" href="{{github}}"><button type="button" class="btn btn-outline-dark">Github</button></a></li>
+            </ul>
+        </div>
+
+        <div class="row my-5 justify-content-center">
+            <div class="col-lg-6 col-md-10 col-sm-12">
+                <img class="thumbnailImg" src="/assets/img/{{gif}}" alt="gif of {{title}}">
+            </div>
+        </div>
+
+        <div class="row my-5">
+            <div class="card col-sm">
+                <div class="card-body">
+                    <p class="card-text">{{body}}</p>
+                    <h6>Languages and libraries used:</h6>
+                    <ul class="list-inline text-center">
+                        {{#each tech}}
+                        <li class="list-inline-item py-1"><span class="btn-light btn-sm">{{this}}</span></li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+
+
+{{!-- /container --}}
+</div> 
+
+<footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <ul>
+                        <li>Copyright Joseph Giampaoli 2020 (c)</li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <ul>
+                        <li><span><a href=" ">work</a></span></li>
+                        <li><span><a href=" ">about</a></span></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+</footer>

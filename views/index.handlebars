@@ -1,0 +1,77 @@
+
+
+<ul class="nav nav-pills justify-content-center fixed-top">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="/">index</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/work">work</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/about">about</a>
+  </li>
+</ul>
+
+
+<div class="text-center flood">
+    <div class="myName position-fixed top-50 start-50 translate-middle">
+        <h1>Joe Giampaoli</h1> 
+    </div>
+</div>
+
+
+
+
+<div class="container py-4">
+
+    
+    <div class="row text-center py-4">
+        <div>
+            <h4>Web Designer & Developer</h4>
+            <p class="lead">About blurb lorem ipsum. About blurb lorem ipsum.</p>
+        </div>
+    </div>
+    <div class="row my-5">
+        <ul class="list-inline text-center">
+            <li class="list-inline-item"><a target="_blank" href="https://github.com/joe-zu"><button type="button" class="btn btn-outline-dark">Github</button></a></li>
+            <li class="list-inline-item"><a target="_blank" href="https://github.com/joe-zu"><button type="button" class="btn btn-outline-dark">LinkedIn</button></a></li>
+            <li class="list-inline-item"><a target="_blank" href="https://github.com/joe-zu"><button type="button" class="btn btn-outline-dark">Dribbble</button></a></li>
+            <li class="list-inline-item"><a target="_blank" href="https://github.com/joe-zu"><button type="button" class="btn btn-outline-dark">Instagram</button></a></li>
+        </ul>
+    </div>
+    <div class="row my-5">
+            <h4>recent work</h4>
+    </div>
+    <div class="row my-5">
+            {{!-- {{work}} --}}
+            {{#each projects}}
+                {{#if new}}
+                    {{> thumbs/thumbs}}
+                {{/if}}
+            {{/each}}
+            <p>more work>></p>
+    </div>
+
+
+
+{{!-- /container --}}
+</div> 
+
+<footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <ul>
+                        <li>Copyright Joseph Giampaoli 2020 (c)</li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <ul>
+                        <li><span><a href=" ">work</a></span></li>
+                        <li><span><a href=" ">about</a></span></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+</footer>
