@@ -41,6 +41,7 @@ body {
     background-image: url(/assets/img/aboutJG.png);
   
     height: 100%;
+    max-width: 100%;
     /* margin-top: -3.5rem; */
     background-attachment: fixed;
     background-position: center;
