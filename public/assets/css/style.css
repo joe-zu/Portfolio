@@ -48,7 +48,17 @@ body {
     background-size: cover;
     z-index: 1;
 }
-
+.floodBottom {
+    position: relative;
+    margin-top: -8vw
+}
+.floodBottom img {
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .myName {
     position: fixed;
     z-index: 1;
