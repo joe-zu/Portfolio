@@ -23,8 +23,11 @@ body {
 
 /* FLOOD */
 .flood {
-    background-color: #FFB85C;
-    width: 100%;
+    /* background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%); */
+    /* background-image: linear-gradient(-180deg, #AAD2DA 0%, #B9B6E5 100%); */
+    /* background-image: linear-gradient(-180deg, #FFD1C5 0%, #A9D8FF 100%); */
+    background-color: #FA8261;
+  
     height: 100%;
     /* margin-top: -3.5rem; */
     background-attachment: fixed;
@@ -33,6 +36,19 @@ body {
     background-size: cover;
     z-index: 1;
 }
+.floodAbout {
+    /* background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%); */
+    background-image: url(/assets/img/aboutJG.png);
+  
+    height: 100%;
+    /* margin-top: -3.5rem; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
 .myName {
     position: fixed;
     z-index: 1;
@@ -48,11 +64,39 @@ h1 {
     color: white;
 }
 
+.blurb p, .blurb h2{
+    font-size: 2.2em;
+    font-weight: 700;
+    line-height: 1.5em;
+    color: #474350;
+}
+.blurb h3 {
+    color: #474350;
+    line-height: 1.4em;
+}
+
+.bg-color-1, .bg-color-1 .container{
+    background: linear-gradient(to bottom, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%), linear-gradient(to bottom, rgba(0,0,0,0.02) 50%, rgba(255,255,255,0.02) 61%, rgba(0,0,0,0.02) 73%), linear-gradient(33deg, rgba(255,255,255,0.20) 0%, rgba(0,0,0,0.20) 100%);
+ background-blend-mode: normal,color-burn;
+}
+
 .thumbnailImg {
     max-width: 100%;
     height: auto;
     border-radius: 16px;
 }
 
+.card {
+    border-style: none;
+    border-radius: 16px;
+}
+
 /* FOOTER STYLES */
+.footer, .footer .container {
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+.footer li, .footer a {
+    color: white;
+
+}
 

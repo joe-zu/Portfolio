@@ -1,17 +1,17 @@
 
-
-<ul class="nav nav-pills justify-content-center fixed-top">
-  <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="/">index</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/work">work</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/about">about</a>
-  </li>
-</ul>
-
+<div class="fixed-top"> 
+    <ul class="nav nav-pills justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">index</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/work">work</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/about">about</a>
+        </li>
+    </ul>
+</div>
 
 <div class="text-center flood">
     <div class="myName position-fixed top-50 start-50 translate-middle">
@@ -22,56 +22,63 @@
 
 
 
-<div class="container py-4">
+<div class="container pb-5">
 
     
-    <div class="row text-center py-4">
-        <div>
-            <h4>Web Designer & Developer</h4>
-            <p class="lead">About blurb lorem ipsum. About blurb lorem ipsum.</p>
+    <div class="row my-5 text-center pt-5">
+        <div class=" col-sm blurb">
+            <h2>I'm a graphic designer and web developer,</h2>
+            <p>in Los Angeles CA.</p>
         </div>
     </div>
-    <div class="row my-5">
+
+    <div class="row pb-5">
         <ul class="list-inline text-center">
-            <li class="list-inline-item"><a target="_blank" href="https://github.com/joe-zu"><button type="button" class="btn btn-outline-dark">Github</button></a></li>
-            <li class="list-inline-item"><a target="_blank" href="https://github.com/joe-zu"><button type="button" class="btn btn-outline-dark">LinkedIn</button></a></li>
-            <li class="list-inline-item"><a target="_blank" href="https://github.com/joe-zu"><button type="button" class="btn btn-outline-dark">Dribbble</button></a></li>
-            <li class="list-inline-item"><a target="_blank" href="https://github.com/joe-zu"><button type="button" class="btn btn-outline-dark">Instagram</button></a></li>
+            <li class="list-inline-item py-1"><a target="_blank" href="https://github.com/joe-zu"><button type="button" class="btn btn-outline-dark">Github</button></a></li>
+            <li class="list-inline-item py-1"><a target="_blank" href="https://www.linkedin.com/in/joegiampaoli/"><button type="button" class="btn btn-outline-dark">LinkedIn</button></a></li>
+            <li class="list-inline-item py-1"><a target="_blank" href="https://dribbble.com/Joezu"><button type="button" class="btn btn-outline-dark">Dribbble</button></a></li>
+            <li class="list-inline-item py-1"><a target="_blank" href="https://www.instagram.com/joe.zu/"><button type="button" class="btn btn-outline-dark">Instagram</button></a></li>
         </ul>
     </div>
-    <div class="row my-5">
-            <h4>recent work</h4>
-    </div>
-    <div class="row my-5">
-            {{!-- {{work}} --}}
-            {{#each projects}}
-                {{#if new}}
-                    {{> thumbs/thumbs}}
-                {{/if}}
-            {{/each}}
-            <p>more work>></p>
-    </div>
-
-
-
-{{!-- /container --}}
-</div> 
-
+</div>
+<div class="bg-color-1">
+    <div class="container py-5">
+        <div class="row py-4 text-center">
+                <h2>Recent Work</h2>
+        </div>
+        <div class="row mb-5 pb-2 justify-content-center">
+                {{!-- {{work}} --}}
+                {{#each projects}}
+                    {{#if new}}
+                        {{> thumbs/thumbs}}
+                    {{/if}}
+                {{/each}}
+                
+        </div>
+        <div class="row pb-5 text-center">
+            <a href="/work" class="card-link projectLink">
+                <button type="button" class="btn btn-light">More Work >></button>
+            </a>
+        </div>
+    </div> 
+</div>
 <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <ul>
-                        <li>Copyright Joseph Giampaoli 2020 (c)</li>
-                    </ul>
-                </div>
-                <div class="col-6">
-                    <ul>
-                        <li><span><a href=" ">work</a></span></li>
-                        <li><span><a href=" ">about</a></span></li>
-                    </ul>
-                </div>
-
+        <div class="container pt-5">
+            <div class="row py-5">    
+                <ul class="list-inline text-center">
+                    <li class="list-inline-item">Copyright Joseph Giampaoli 2021 ©</li>
+                </ul>
+                <ul class="list-inline text-center">
+                    <li class="list-inline-item"><a target="_blank" href="https://github.com/joe-zu">index</a></li>
+                    <li class="list-inline-item"><a target="_blank" href="https://github.com/joe-zu">work</a></li>
+                    <li class="list-inline-item"><a target="_blank" href="https://github.com/joe-zu">about</a></li>
+                </ul>
+                <ul class="list-inline text-center">
+                     <li class="list-inline-item"><a target="_blank" href="https://github.com/joe-zu">github</a></li>
+                    <li class="list-inline-item"><a target="_blank" href="https://github.com/joe-zu">LinkedIn</a></li>
+                    <li class="list-inline-item"><a target="_blank" href="https://github.com/joe-zu">Dribbble</a></li>
+                    <li class="list-inline-item"><a target="_blank" href="https://github.com/joe-zu">Instagram</a></li>
+                </ul>
             </div>
         </div>
 </footer>
