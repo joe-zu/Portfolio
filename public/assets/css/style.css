@@ -19,7 +19,10 @@ body {
 .nav-item {
     padding-top: 1rem;
 }
-
+.navBg {
+    background-color: tan;
+    width: 14rem;
+}
 
 /* FLOOD */
 .flood {
@@ -39,9 +42,9 @@ body {
 .floodAbout {
     /* background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%); */
     background-image: url(/assets/img/aboutJG.png);
-  
+    object-fit: contain;
     height: 100%;
-    max-width: 100%;
+    width: 100%;
     /* margin-top: -3.5rem; */
     background-attachment: fixed;
     background-position: center;
