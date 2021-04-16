@@ -49,9 +49,17 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto 100%;
+    background-size: cover;
     z-index: 1;
 }
+
+@media screen and (max-width: 575px) {
+    .floodAbout {
+        height: 100%;
+        width: auto;
+    }
+  }
+
 .floodBottom {
     position: relative;
     margin-top: -8vw
