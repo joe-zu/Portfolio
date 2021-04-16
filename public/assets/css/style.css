@@ -43,7 +43,7 @@ body {
     /* background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%); */
     background-image: url(/assets/img/aboutJG.png);
     object-fit: contain;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     /* margin-top: -3.5rem; */
     background-attachment: fixed;
