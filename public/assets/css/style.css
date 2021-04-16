@@ -39,26 +39,38 @@ body {
     background-size: cover;
     z-index: 1;
 }
+
 .floodAbout {
-    /* background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%); */
     background-image: url(/assets/img/aboutJG.png);
-    /* object-fit: cover; */
     height: 100vh;
-    width: 100%;
-    /* margin-top: -3.5rem; */
+    width: auto;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 575px) {
     .floodAbout {
-        height: 100%;
-        width: auto;
+        background-image: linear-gradient(-180deg, #FFD1C5 0%, #A9D8FF 100%); 
     }
-  }
+    .aboutMe {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 575px) {
+    .aboutMe {
+    display: none;
+}
+}
+
 
 .floodBottom {
     position: relative;
