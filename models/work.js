@@ -8,7 +8,7 @@ module.exports = [
         body: 'At its core, ExpandFi is a SaaS that helps Amazon Sellers expand their business off of Amazon. We developed the marketing website for this product which advertises the features of Expandfi and allows anyone to sign up for the waitlist.',
         gif: 'expandfi.gif',
         github: 'https://github.com/kaeverett/expandfi_marketing',
-        url: 'comingsoon',
+        url: '',
         colors: [' ']
     },
     {
