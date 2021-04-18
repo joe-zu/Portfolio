@@ -1,5 +1,17 @@
 module.exports = [
     {
+        id: 6,
+        new: true,
+        title: 'ExpandFi',
+        caption: 'Expand your business',
+        tech: ['Material UI', 'REACT', 'Javascript', 'NODE', 'Google API', 'Git Pages'],
+        body: 'At its core, ExpandFi is a SaaS that helps Amazon Sellers expand their business off of Amazon. We developed the marketing website for this product which advertises the features of Expandfi and allows anyone to sign up for the waitlist.',
+        gif: 'expandfi.gif',
+        github: 'https://github.com/kaeverett/expandfi_marketing',
+        url: 'comingsoon',
+        colors: [' ']
+    },
+    {
         id: 5,
         new: true,
         title: 'Hair Friends 2',
@@ -25,7 +37,7 @@ module.exports = [
     },
     {
         id: 3,
-        new: true,
+        new: false,
         title: 'City Weather',
         caption: 'Check the weather in your city',
         tech: ['REST API', 'Local Storage', 'Javascript', 'Bootstrap'],
